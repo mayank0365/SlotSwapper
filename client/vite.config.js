@@ -7,8 +7,9 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://slotswapper-1-rdkn.onrender.com',
         changeOrigin: true,
+        secure: true,
       },
     },
   },
